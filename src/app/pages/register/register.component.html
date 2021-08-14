@@ -1,0 +1,27 @@
+<ion-content>
+  <main class="container">
+    <section class="title-container">
+      <h2>Crea tu <span>cuenta</span></h2>
+      <h2>Empieza a </h2>
+      <h2>Comprar <span>ahora.</span></h2>
+    </section>
+    <section>
+      <form class="form-container">
+        <input class="input-form" type="text" placeholder="Nombre">
+        <input class="input-form" type="text" placeholder="Apellido">
+        <input class="input-form" type="text" placeholder="Username">
+        <input class="input-form" type="email" placeholder="Email">
+        <input class="input-form" type="text" placeholder="Direccion">
+        <input class="input-form" type="password" placeholder="Password">
+        <input class="input-form" type="password" placeholder="Confirm Password">
+        <label class="input-label" for="user">Tipo de usuario</label>
+        <select placeholder="escoja una opcion" name="user" id="user">
+          <option value="Comprador">Comprador</option>
+          <option value="Vendedor">Vendedor</option>
+        </select>
+        <button [routerLink]="['/home']" routerLinkActive="router-link-active">Registrarme</button>
+        <p>¿Ya tienes una cuenta?<a [routerLink]="['/login']" routerLinkActive="router-link-active">Inicia sesión</a></p>
+      </form>
+    </section>
+  </main>
+</ion-content>

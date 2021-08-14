@@ -1,21 +1,11 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      App movil
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">App movil 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer"
-        href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <main>
+    <section class="title-container">
+      <h1 class="title">Bienvenido a tu aplicacion movil SUSAMAURO</h1>
+    </section>
+    <section class="container">
+      <a [routerLink]="['/ges-factura']" routerLinkActive="router-link-active">Gestión de Facturas</a>
+      <a>Gestión de Productos</a>
+    </section>
+  </main>
 </ion-content>

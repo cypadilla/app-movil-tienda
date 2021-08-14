@@ -1,0 +1,20 @@
+<ion-content>
+  <main>
+    <section class="title-container">
+      <h1 class="title">Factura</h1>
+    </section>
+    <section>
+      <form action="" class="form-container">
+        <label for="date">Fecha factura</label>
+        <input class="input-form" type="date" name="date">
+        <label for="product">Producto</label>
+        <input class="input-form" type="text" name="product">
+        <label for="shopper">Comprador</label>
+        <input class="input-form" type="text" name="shopper">
+        <label for="price">Valor</label>
+        <input class="input-form" type="number" name="price">
+        <a [routerLink]="['/ges-factura']" routerLinkActive="router-link-active">Guardar</a>
+      </form>
+    </section>
+  </main>
+</ion-content>

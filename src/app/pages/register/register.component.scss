@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.title-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+h2{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Varela Round',sans-serif;
+}
+span{
+    color:#202E7C;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input-form{
+    background: #E4E3E3;
+    border: 1px solid #E4E3E3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    outline: none;
+    width: 60%;
+    height: 40px;
+    padding: 5%;
+    margin-bottom: 20px;
+}
+.input-label{
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Varela Round',sans-serif;
+    margin-bottom: 10px;
+
+}
+
+select{
+    background: #E4E3E3;
+    border: 1px solid #E4E3E3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    outline: none;
+    width: 60%;
+    /* height: 40px; */
+    padding: 5%;
+    margin-bottom: 20px;
+
+}
+button{
+    background: #03298C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.63);
+    border: 1px solid #202E7C;
+    border-radius: 50px;
+    color: #E4E3E3;
+    width: 50%;
+    height: 40px;
+    margin-bottom: 20px;
+
+}
+
+a{
+    font-family: 'Varela Round',sans-serif;
+    text-decoration: none;
+}
