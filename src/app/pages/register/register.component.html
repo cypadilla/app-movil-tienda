@@ -16,8 +16,9 @@
         <input class="input-form" type="password" placeholder="Confirm Password">
         <label class="input-label" for="user">Tipo de usuario</label>
         <select placeholder="escoja una opcion" name="user" id="user">
-          <option value="Comprador">Comprador</option>
-          <option value="Vendedor">Vendedor</option>
+          <option value="comprador">Comprador</option>
+          <option value="vendedor">Vendedor</option>
+          <option value="administrador">Administrador</option>
         </select>
         <button [routerLink]="['/home']" routerLinkActive="router-link-active">Registrarme</button>
         <p>¿Ya tienes una cuenta?<a [routerLink]="['/login']" routerLinkActive="router-link-active">Inicia sesión</a></p>

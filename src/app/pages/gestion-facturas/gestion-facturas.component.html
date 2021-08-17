@@ -4,25 +4,13 @@
       <h1 class="title">Mis facturas </h1>
     </section>
     <section class="container">
-      <div class="item">
-        <p># De Factura</p>
+      <div *ngFor="let item of facturas" class="item">
+        <p>Nombre de producto</p>
         <p>Total de factura</p>
-        <p class="p-value">12134565</p>
-        <p class="p-value">$999999</p>
+        <p class="p-value">{{item.nombreProducto}}</p>
+        <p class="p-value">{{item.valor}}</p>
+        <button>Generar PDF</button>
       </div>
-      <div class="item">
-        <p># De Factura</p>
-        <p>Total de factura</p>
-        <p class="p-value">12134565</p>
-        <p class="p-value">$999999</p>
-      </div>
-      <div class="item">
-        <p># De Factura</p>
-        <p>Total de factura</p>
-        <p class="p-value">12134565</p>
-        <p class="p-value">$999999</p>
-      </div>
-
       <a [routerLink]="['/factura']" routerLinkActive="router-link-active">Añadir Factura</a>
     </section>
   </main>

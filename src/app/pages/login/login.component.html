@@ -4,14 +4,14 @@
       <h1 class="title">Login</h1>
     </section>
     <section>
-      <form action="" class="form-container">
-        <input class="input-form" type="text" placeholder="Email..">
-        <input class="input-form" type="password" placeholder="Password..">
+      <form action="" class="form-container" (ngSubmit)="onSave()"[formGroup]="formLogin">
+        <input class="input-form" type="text" placeholder="Email.." formControlName="email" >
+        <input class="input-form" type="password" placeholder="Password.."  formControlName="password">
         <p class="text-form">¿Aún no tienes una cuenta?<a [routerLink]="['/register']"
             routerLinkActive="router-link-active">Registrate</a></p>
         <p class="text-form">¿Olvidaste tu contraseña?<a href="/recuperarContraseña.html">Recuperar Contraseña</a></p>
-        <button [routerLink]="['/home']" routerLinkActive="router-link-active" >Iniciar</button>
+        <button type="submit" >Iniciar</button>
       </form>
     </section>
   </main>
-</ion-content>
+</ion-content>  

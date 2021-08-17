@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { FacturaResponse } from 'src/app/models/factura-response';
+import { FacturasService } from 'src/app/services/facturas.service';
 
 @Component({
   selector: 'app-gestion-facturas',
@@ -7,8 +10,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GestionFacturasComponent implements OnInit {
 
-  constructor() { }
+  facturas:any
+  constructor(
+    private facturaService: FacturasService,
+    private router:Router
+  ) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.getBills()
+  }
+
+  getBills(){
+    let id = localStorage.getItem('id')
+    this.facturaService.getBills(id).subscribe( factura => {
+      this.facturas = factura;
+    })
+  }
 
 }
