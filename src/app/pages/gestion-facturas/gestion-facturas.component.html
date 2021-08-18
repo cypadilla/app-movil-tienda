@@ -9,8 +9,9 @@
         <p>Total de factura</p>
         <p class="p-value">{{item.nombreProducto}}</p>
         <p class="p-value">{{item.valor}}</p>
-        <button>Generar PDF</button>
+        <button (click)="openPdfTables(item)">Generar PDF</button>
       </div>
+      
       <a [routerLink]="['/factura']" routerLinkActive="router-link-active">Añadir Factura</a>
     </section>
   </main>

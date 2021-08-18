@@ -5,8 +5,8 @@
     </section>
     <section>
       <form action="" class="form-container" (ngSubmit)="onSave()"[formGroup]="formLogin">
-        <input class="input-form" type="text" placeholder="Email.." formControlName="email" >
-        <input class="input-form" type="password" placeholder="Password.."  formControlName="password">
+        <ion-input class="input-form" type="text" placeholder="Email.." formControlName="email" ></ion-input>
+        <ion-input class="input-form" type="password" placeholder="Password.."  formControlName="password"></ion-input>
         <p class="text-form">¿Aún no tienes una cuenta?<a [routerLink]="['/register']"
             routerLinkActive="router-link-active">Registrate</a></p>
         <p class="text-form">¿Olvidaste tu contraseña?<a href="/recuperarContraseña.html">Recuperar Contraseña</a></p>

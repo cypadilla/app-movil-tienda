@@ -6,21 +6,20 @@
       <h2>Comprar <span>ahora.</span></h2>
     </section>
     <section>
-      <form class="form-container">
-        <input class="input-form" type="text" placeholder="Nombre">
-        <input class="input-form" type="text" placeholder="Apellido">
-        <input class="input-form" type="text" placeholder="Username">
-        <input class="input-form" type="email" placeholder="Email">
-        <input class="input-form" type="text" placeholder="Direccion">
-        <input class="input-form" type="password" placeholder="Password">
-        <input class="input-form" type="password" placeholder="Confirm Password">
+      <form class="form-container" (ngSubmit)="onSave()"[formGroup]="formRegister">
+        <input class="input-form" type="text" placeholder="Nombre" formControlName="nombre">
+        <input class="input-form" type="text" placeholder="Apellido" formControlName="apellido">
+        <input class="input-form" type="email" placeholder="Email" formControlName="email">
+        <input class="input-form" type="text" placeholder="Direccion" formControlName="direccion">
+        <input class="input-form" type="password" placeholder="Password" formControlName="password">
+        <input class="input-form" type="password" placeholder="Confirm Password" formControlName="repeat">
         <label class="input-label" for="user">Tipo de usuario</label>
-        <select placeholder="escoja una opcion" name="user" id="user">
+        <select placeholder="escoja una opcion" name="user" id="user" formControlName="tipo">
           <option value="comprador">Comprador</option>
           <option value="vendedor">Vendedor</option>
           <option value="administrador">Administrador</option>
         </select>
-        <button [routerLink]="['/home']" routerLinkActive="router-link-active">Registrarme</button>
+        <button type="submit">Registrarme</button>
         <p>¿Ya tienes una cuenta?<a [routerLink]="['/login']" routerLinkActive="router-link-active">Inicia sesión</a></p>
       </form>
     </section>

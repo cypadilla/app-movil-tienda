@@ -15,5 +15,9 @@ export class FacturasService {
     return this.http.get<FacturaResponse>(`http://localhost:3000/api/facturas/${id}`);
   }
 
+  setBills(data){
+    return this.http.post<FacturaResponse>(`http://localhost:3000/api/facturas/`,data);
+  }
+
 }
 
